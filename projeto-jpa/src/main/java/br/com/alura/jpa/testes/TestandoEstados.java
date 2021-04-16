@@ -29,7 +29,14 @@ public class TestandoEstados {
 	     * Transient -> Managed - Quando executarmos a persistência com este método, 
 	     * estaremos transformando um objeto Transient em Managed, 
 	     * cuja característica é a sincronização automática com o banco de dados.
+	     * 
+	     * Removed - Caso queiramos remover a conta Managed, poderemos usar o método remove() 
+	     * passando uma conta que será deletada de seu contexto JPA, 
+	     * o que gerará a sincronização e aplicará um delete no banco de dados, 
+	     * transformando-a em um estado Removed.
 	     */
+	    
+	    
 	    
 	    em.getTransaction().begin();
 	    
