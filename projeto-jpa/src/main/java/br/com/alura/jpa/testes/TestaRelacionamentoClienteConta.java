@@ -14,10 +14,10 @@ public class TestaRelacionamentoClienteConta {
 		EntityManager em = emf.createEntityManager();
 		
 		Conta conta = new Conta();
-		conta.setId(1L);
+		conta.setId(3L);
 		
 		Cliente cliente = new Cliente();
-		cliente.setNome("Leonardo");
+		cliente.setNome("Luiz");
 		cliente.setEndereco("Rua do ouvidor, 60");
 		cliente.setProfissao("Professor");
 		cliente.setConta(conta);
